@@ -1,0 +1,264 @@
+@import '~antd/dist/antd.css';
+* {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+:root {
+  --red: #ae3224;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  image-resolution: inherit;
+}
+.app-wrapper {
+  margin: 0 auto;
+  width: 75%;
+}
+.ant-typography {
+  font-size: 18px;
+}
+.ant-layout {
+  background: white;
+}
+/*<--------------- HEADER -------------->*/
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80px;
+}
+.header {
+  padding: 0;
+  height: 80px;
+}
+header .wrapper {
+  display: flex;
+  color: black;
+  background: white;
+  justify-content: space-between;
+  width: 100%;
+}
+header .logo {
+  color: var(--red);
+  font-weight: 900;
+  font-size: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.header-search {
+  width: 300px;
+}
+.input {
+  width: 100%;
+}
+.header-search span {
+  padding: 0 10px;
+}
+.input {
+  padding: 10px;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid #d1d8e1;
+}
+input {
+  width: 500px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+/*<--------------------- TOP --------------------->*/
+.card {
+  border: '0';
+  border-radius: '5px';
+  overflow: 'hidden';
+}
+.post-card img {
+  border-radius: 5px;
+}
+.ant-card-body {
+  padding: 0px;
+}
+.post-card__bell {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bell {
+  margin-right: 10px;
+}
+.bell__count {
+  background: #2c364f;
+  margin: auto;
+  font-size: 16px;
+  padding: 4px;
+  width: 100px;
+  border-radius: 50%;
+}
+.post-card-title {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+.simple-po {
+  width: auto;
+  padding: 5px 0px 5px 0px;
+}
+.simple-post {
+  width: 500px;
+  height: 190px;
+  padding: 5px 0px 5px 0px;
+}
+.simple-post__right {
+  width: 100%;
+}
+.simple-post__image img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.simple-post__image {
+  align-items: center;
+  display: flex;
+}
+.simple-post__title-top {
+  font-size: 14px;
+  padding: 0;
+}
+.simple-post__title-bot {
+  font-size: 13px;
+  color: #d1d8e1;
+  padding: 0;
+}
+.simple-post__hashtags {
+  font-size: 14px;
+  color: var(--red);
+  padding: 0;
+}
+.simple-post__desc {
+  font-weight: 800;
+  padding: 0;
+}
+.simple-post__info {
+  font-size: 13px;
+  color: #d1d8e1;
+  padding: 0;
+}
+.main-right {
+  float: rigth;
+}
+/*<--------------------- TAGS --------------------->*/
+.topics-title {
+  text-transform: uppercase;
+  color: #808080;
+}
+.topics-link {
+  margin-left: 20px;
+  color: var(--red);
+  font-size: 16px;
+}
+.tags {
+  margin: 5px 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.selected {
+  background: var(--red);
+}
+.square {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid #e8e8e9;
+}
+/*<--------------------- MOST POPULAR --------------------->*/
+.most-popular {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+.popular-post {
+  flex: 1 0 20%;
+  padding: 5px;
+}
+.video {
+  float: right;
+}
+.col3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fle {
+  display: flex;
+}
+.categories_item {
+  flex: 1 0 33%;
+  padding-right: 40px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+  background: white;
+}
+
+@media (max-width: 500px) {
+  .app-wrapper {
+    margin: 0 20px;
+    width: 100%;
+  }
+  .header-search {
+    width: 100%;
+    margin-left: -70px;
+  }
+  .input {
+    width: auto;
+  }
+  .simple-post {
+    width: 100%;
+    height: 190px;
+    padding: 5px 0px 5px 0px;
+  }
+}
+@media (max-width: 999px) {
+  .app-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .header-search {
+    width: 100%;
+    margin-left: -70px;
+  }
+  .input {
+    width: auto;
+  }
+  .simple-post {
+    width: 100%;
+    height: 190px;
+    padding: 5px 0px 5px 0px;
+  }
+  .most-popular {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+}
