@@ -36,7 +36,10 @@ img {
   background: white;
 }
 /*<--------------- HEADER -------------->*/
-
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 header {
   display: flex;
   justify-content: center;
@@ -62,7 +65,9 @@ header .logo {
     'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 .header-search {
-  width: 300px;
+  display: flex;
+  width: 70%;
+  align-items: center;
 }
 .input {
   width: 100%;
@@ -82,6 +87,10 @@ input {
 .avatar {
   display: flex;
   align-items: center;
+}
+.avatar__image img {
+  width: 30px;
+  border-radius: 50%;
 }
 
 /*<--------------------- TOP --------------------->*/
@@ -224,6 +233,14 @@ input {
   .app-wrapper {
     margin: 0 20px;
     width: 100%;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+      'Droid Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
   }
   .header-search {
     width: 100%;
