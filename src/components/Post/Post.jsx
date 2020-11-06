@@ -24,7 +24,7 @@ export const Post = (props) => {
             alt='example'
             width={props.width ? props.width : 200}
             height={props.height ? props.height : 180}
-            src='https://cdn.mos.cms.futurecdn.net/ahevYTh9pWRzkNPF85MQhb.jpg'
+            src='https://www.net-entreprises.fr/wp-content/uploads/2017/12/iStock-497739640.jpg'
           />
         }
       >

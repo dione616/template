@@ -217,6 +217,7 @@ input {
 }
 .fle {
   display: flex;
+  height: 200px;
 }
 .categories_item {
   flex: 1 0 33%;
@@ -254,6 +255,10 @@ input {
     height: 190px;
     padding: 5px 0px 5px 0px;
   }
+  .categories_item {
+    flex: 1 0 100%;
+    padding-right: 40px;
+  }
 }
 @media (max-width: 999px) {
   .app-wrapper {
@@ -277,5 +282,9 @@ input {
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+  }
+  .categories_item {
+    flex: 1 0 100%;
+    padding-right: 40px;
   }
 }
